@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+/* Reset de márgenes y bordes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales de la página */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilos del header */
+.header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    position: relative;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo:hover {
+    color: #f4a261;
+}
+
+/* Menú de navegación */
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    transition: background-color 0.3s;
+}
+
+.navbar ul li a:hover {
+    background-color: #f4a261;
+    border-radius: 5px;
+}
+
+/* Estilos para el icono de menú */
+.menu-icono {
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+
+/* Estilos del carrito */
+.submenu {
+    position: relative;
+}
+
+#img-carrito {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+#carrito {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    z-index: 10;
+}
+
+#carrito table {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#carrito td, th {
+    padding: 8px;
+    text-align: left;
+}
+
+#Vaciar-carrito {
+    display: block;
+    text-align: center;
+    background-color: #f4a261;
+    color: white;
+    padding: 5px 0;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#Vaciar-carrito:hover {
+    background-color: #e76f51;
+}
+
+/* Mostrar el carrito cuando se pase el mouse por encima */
+.submenu:hover #carrito {
+    display: block;
+}
+
+/* Estilos para dispositivos pequeños (responsive) */
+@media screen and (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+    }
+
+    .navbar ul li a {
+        padding: 10px 20px;
+    }
+
+    #menu:checked + label + .navbar ul {
+        display: flex;
+    }
+
+    .menu-icono {
+        display: block;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+body{
+    text-align: center;
+    font-family: serif;
+}
+
+.cabeza{
+    display: flex;
+    justify-content: space-between;
+    height: 63px;
+    align-items: center;
+    background: #171717;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.barra_links{
+    display: flex;
+    margin-right: 30px;
+}
+
+
+.barra_links a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 20px 20px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.barra_links a:hover{
+    background: #3f3f3f;
+}
+
+.contenido-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+p{
+    margin-bottom: 40px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.contenido-header{
+    height: 100vh !important;
+    background: url(deportes.png)no-repeat center;
+    background-size: cover;
+}
+
+.titulo{
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.intro{
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #000000;
+}
